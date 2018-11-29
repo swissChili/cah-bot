@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 # https://discordapp.com/oauth2/authorize?&client_id=517436515232645120&scope=bot&permissions=0
 # 517436515232645120
 import discord
@@ -34,7 +34,8 @@ def pick_username():
         "l33t_h4x0r",
         "ben_shapiro",
         "kanye2020_",
-        "gamor_moment"
+        "gamor_moment",
+        "im_already_tracer"
     ])
 def random_password():
     return random.choice([
@@ -44,7 +45,8 @@ def random_password():
         "dab",
         "fortnite",
         "epic",
-        "yeet"
+        "yeet",
+        "ill_be_tracer"
     ])
 
 def read(f):
