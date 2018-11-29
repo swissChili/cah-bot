@@ -10,8 +10,11 @@ I'm not affiliated with the official Cards Against Humanity game or the web app 
 Usage
 ~~~~~
 You'll need python3 and pip::
+
     pip3 install selenium discord --user
+
     # install the firefox browser driver thing
+
     python3 main.py
 
 
