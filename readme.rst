@@ -6,6 +6,9 @@ This is a Discord bot to create cards against humanity games.
 
 I'm not affiliated with the official Cards Against Humanity game or the web app in any way. Don't sue me.
 
+Changelog
+~~~~~~~~~
+```` Added colors to embed and made messages be deleted aftergame was started
 
 Usage
 ~~~~~

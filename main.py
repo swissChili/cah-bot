@@ -14,9 +14,8 @@ import random
 cards = [
     "Base Game (US) 100 black cards, 500 white cards."
 ]
-games = {
-
-}
+games = {}
+messages = {}
 
 client = discord.Client()
 
@@ -101,17 +100,20 @@ async def on_message(message):
         game_info = new_game()
         embed=discord.Embed(title="Cards Against Humanity",
                             url=game_info[0], 
-                            description="Game Created! Join and add any reaction to start game")
+                            description="Game Created! Join and add any reaction to start game",
+                            color=0x3ae576)
         embed.add_field(name="password", value=game_info[2], inline=False)
         msg = await client.send_message(message.channel, embed=embed)
         await client.add_reaction(msg, "\U0001F44D")
         games[msg.timestamp] = game_info[1]
+        messages[msg.timestamp] = msg
 
 @client.event
 async def on_reaction_add(reaction, user):
     if not user.id == client.user.id:
         print("Starting...")
         start_game(games[reaction.message.timestamp])
+        await client.delete_message(messages[reaction.message.timestamp])
 
 if __name__ == "__main__":
     client.run(read("token.dat"))
