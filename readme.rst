@@ -8,7 +8,7 @@ I'm not affiliated with the official Cards Against Humanity game or the web app 
 
 Changelog
 ~~~~~~~~~
-```` Added colors to embed and made messages be deleted aftergame was started
+``2dd341a`` Added colors to embed and made messages be deleted aftergame was started
 
 Usage
 ~~~~~
