@@ -12,9 +12,7 @@ Usage
 You'll need python3 and pip::
 
     pip3 install selenium discord --user
-
     # install the firefox browser driver thing
-
     python3 main.py
 
 
@@ -28,8 +26,11 @@ Just an endpoint I could ping would be great.
 The bot will then reply with something like this:
 
     **Cards Against Humanity**
+
     Game Created! Join and add any reaction to start game
+
     *password*
+    
     ``h``
 
 Click the link (the title) and input the password to join the game. Once enough people have joined, click
