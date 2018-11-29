@@ -33,7 +33,8 @@ def pick_username():
         "dedidaded_wam",
         "l33t_h4x0r",
         "ben_shapiro",
-        "kanye2020_"
+        "kanye2020_",
+        "gamor_moment"
     ])
 def random_password():
     return random.choice([
@@ -41,7 +42,9 @@ def random_password():
         "e",
         "waluigi",
         "dab",
-        "fortnite"
+        "fortnite",
+        "epic",
+        "yeet"
     ])
 
 def read(f):
